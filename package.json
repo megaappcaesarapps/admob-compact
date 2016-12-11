@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-admobcompact",
+  "version": "0.0.1",
+  "description": "admobcompact",
+  "cordova": {
+    "id": "cordova-plugin-admobcompact",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/megaappcaesarapps/admob-compact"
+  },
+  "keywords": [
+    "cordova",
+    "admob"
+  ],
+  "author": "MegaApp",
+  "license": "MIT"
+}

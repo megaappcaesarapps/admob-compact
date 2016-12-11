@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+           id="cordova-plugin-admob-compact"
+      version="0.1.5">
+    <name>Admob Compact</name>
+
+	<author>MegaApps</author>
+
+	<license>MIT</license>
+
+	<description>
+		This plugins is a compact AdMob integration for Cordova and ionic projects
+	</description>
+
+    <js-module src="www/admobcompact.js" name="admobcompact">
+        <clobbers target="cordova.plugins.admobcompact" />
+    </js-module>
+
+	<info>
+		This plugins is a compact AdMob integration for Cordova and ionic projects
+	</info>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="admobcompact">
+                <param name="android-package" value="org.apache.cordova.plugin.admobcompact"/>
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+        </config-file>
+
+	<source-file src="src/android/admobcompact.java" target-dir="src/org/apache/cordova/plugin/admobcompact" />
+
+     </platform>
+</plugin>
